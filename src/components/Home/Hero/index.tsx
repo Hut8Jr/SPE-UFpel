@@ -12,22 +12,25 @@ export function Hero() {
     >
       <div className="container flex flex-row justify-between">
         <div className="flex flex-1 flex-col items-center justify-center">
-          <div className="mx-3 flex flex-1 flex-col justify-center lg:max-w-[591px]">
-            <h2 className="text-[71px] text-white">
+          <div className="mx-3 flex flex-1 flex-col justify-center gap-7 lg:max-w-[591px]">
+            <h2 className="text-[71px] font-light leading-[74px] text-white">
               Um pouco mais sobre nossa SPE
             </h2>
-            <Link href="/sobre" className="text-white">
+            <Link
+              href="/sobre"
+              className="font-light text-white hover:underline"
+            >
               SOBRE NÓS
             </Link>
           </div>
         </div>
 
         <div className="flex flex-1 flex-col items-center justify-center">
-          <div className="mx-3 flex flex-1 flex-col justify-center lg:max-w-[591px]">
-            <h2 className="text-[71px] text-white">
+          <div className="mx-3 flex flex-1 flex-col justify-center gap-7 lg:max-w-[591px]">
+            <h2 className="text-[71px] font-light leading-[74px] text-white">
               Mudando com nosso trabalho
             </h2>
-            <Link href="/" className="text-white">
+            <Link href="/" className="font-light text-white hover:underline">
               NOSSOS PROJETOS
             </Link>
           </div>

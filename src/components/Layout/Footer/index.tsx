@@ -46,10 +46,12 @@ export function Footer() {
             </span>
             <Link
               href="/contato"
-              className="text-brand-dark-blue flex flex-row gap-6 text-[43px]"
+              className="text-brand-dark-blue group flex flex-row items-center gap-6 text-[43px]"
             >
               Contato
-              <Icon name="arrow" />
+              <div className="transform transition-transform duration-300 group-hover:translate-x-2">
+                <Icon name="arrow" />
+              </div>
             </Link>
           </div>
 
@@ -59,10 +61,12 @@ export function Footer() {
             </span>
             <Link
               href="/premios"
-              className="text-brand-dark-blue flex flex-row gap-6 text-[43px]"
+              className="text-brand-dark-blue group flex flex-row items-center gap-6 text-[43px]"
             >
               Prêmios
-              <Icon name="arrow" />
+              <div className="transform transition-transform duration-300 group-hover:translate-x-2">
+                <Icon name="arrow" />
+              </div>
             </Link>
           </div>
         </div>
