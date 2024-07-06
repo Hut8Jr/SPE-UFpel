@@ -4,6 +4,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 import Header from '@/components/Layout/Header'
 import clsx from 'clsx'
+import { Footer } from '@/components/Layout/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,6 +23,7 @@ export default function RootLayout({
       <body className={clsx(inter.className, 'min-h-dvh')}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   )
