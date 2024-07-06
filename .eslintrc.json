@@ -1,0 +1,35 @@
+{
+  "plugins": ["@typescript-eslint", "perfectionist"],
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+    "plugin:storybook/recommended",
+    "plugin:cypress/recommended"
+  ],
+  "rules": {
+    "@typescript-eslint/consistent-type-imports": "error",
+    "perfectionist/sort-imports": "error",
+    "perfectionist/sort-interfaces": "error",
+    "perfectionist/sort-jsx-props": "error",
+    "perfectionist/sort-union-types": "error",
+    "perfectionist/sort-named-imports": "error"
+  },
+  "overrides": [
+    {
+      "files": ["**/*.test.tsx", "**/*.test.ts"],
+      "rules": {
+        "perfectionist/sort-imports": "off"
+      }
+    }
+  ],
+  "ignorePatterns": [
+    "coverage/**/*.js",
+    "cypress/**/*.js",
+    "public/**/*.js",
+    "server-preload.js",
+    "src/icons/**/*.tsx",
+    "**/contracts/generated/*.d.ts"
+  ]
+}
+
