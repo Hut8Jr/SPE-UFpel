@@ -1,8 +1,12 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 export function Project() {
   return (
-    <div className="flex max-w-[1006px] flex-col gap-3">
+    <Link
+      className="flex max-w-[1006px] flex-col gap-3"
+      href={'/projetos/projeto1'}
+    >
       <Image
         src="/projeto1.png"
         height={665}
@@ -20,6 +24,6 @@ export function Project() {
           Palestras
         </span>
       </div>
-    </div>
+    </Link>
   )
 }
