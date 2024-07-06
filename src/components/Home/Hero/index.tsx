@@ -30,7 +30,10 @@ export function Hero() {
             <h2 className="text-[71px] font-light leading-[74px] text-white">
               Mudando com nosso trabalho
             </h2>
-            <Link href="/" className="font-light text-white hover:underline">
+            <Link
+              href="/projetos"
+              className="font-light text-white hover:underline"
+            >
               NOSSOS PROJETOS
             </Link>
           </div>
