@@ -3,16 +3,13 @@ import Link from 'next/link'
 
 export function Project() {
   return (
-    <Link
-      className="flex max-w-[1006px] flex-col gap-3"
-      href={'/projetos/projeto1'}
-    >
+    <Link className="flex flex-col gap-3" href={'/projetos/projeto1'}>
       <Image
         src="/projeto1.png"
         height={665}
         width={1000}
         alt="Projeto 1"
-        className="max-h-[665px] max-w-[1006px]"
+        className="aspect-video w-full"
         style={{
           objectFit: 'fill',
         }}
