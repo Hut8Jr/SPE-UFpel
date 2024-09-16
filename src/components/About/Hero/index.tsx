@@ -2,14 +2,16 @@ import Link from 'next/link'
 
 export function Hero() {
   return (
-    <section className="container h-[720px] bg-brand-dark-blue">
-      <div className="flex max-w-[591px] flex-col items-start justify-start">
-        <h2 className="mt-[140px] text-[71px] font-light leading-[74px] text-white">
-          Um pouco mais sobre nossa SPE
-        </h2>
-        <span className="mt-6 text-[22px] font-light lg:ml-[100px]">
-          SOBRE NÓS
-        </span>
+    <section className="container h-[250px] bg-brand-dark-blue lg:h-[720px]">
+      <div className="flex flex-1 flex-col lg:items-center lg:justify-center">
+        <div className="mx-3 mt-8 flex flex-1 flex-col gap-3 lg:max-w-[591px] lg:justify-center lg:gap-7">
+          <h2 className="text-[36px] font-light leading-[36px] text-white lg:text-[71px] lg:leading-[74px]">
+            Um pouco mais sobre nossa SPE
+          </h2>
+          <span className="font-light text-white lg:no-underline">
+            SOBRE NÓS
+          </span>
+        </div>
       </div>
     </section>
   )

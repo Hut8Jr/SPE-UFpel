@@ -1,10 +1,10 @@
 export function Paragraph() {
   return (
-    <section className="container bg-white py-[150px]">
-      <h1 className="text-[70px] font-light leading-[70px] text-black">
+    <section className="container bg-white py-[40px] lg:py-[150px]">
+      <h1 className="text-[36px] font-light leading-[36px] text-black lg:text-[70px] lg:leading-[70px]">
         Sobre Nós
       </h1>
-      <p className="mt-[60px] text-[27px] font-light leading-[43px] text-black">
+      <p className="mt-[20px] text-lg font-light text-black lg:text-[27px] lg:leading-[43px]">
         O Capítulo Estudantil SPE da Universidade Federal de Pelotas foi fundado
         no dia 05 de julho de 2012, pelos alunos de graduação em Engenharia de
         Petróleo.
