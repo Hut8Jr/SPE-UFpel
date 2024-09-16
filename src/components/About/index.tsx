@@ -3,7 +3,7 @@ import { Hero } from './Hero'
 
 export function AboutContainer() {
   return (
-    <main className="h-full">
+    <main className="h-full bg-white">
       <Hero />
       <Paragraph />
     </main>

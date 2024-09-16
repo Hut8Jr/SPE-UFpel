@@ -33,7 +33,7 @@ const Links = [
 
 export default function Header() {
   return (
-    <div className="bg-white">
+    <div className="max-w-screen fixed top-0 w-full bg-white shadow-md">
       <div className="container flex items-center justify-between py-4">
         <Link href="/">
           <Icon name="logo-icon" />
