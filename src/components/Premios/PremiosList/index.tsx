@@ -1,12 +1,17 @@
+import { Premios } from '@/@types'
 import { Premio } from './Premio'
 
-export function PremiosList() {
+interface PremioListProps {
+  premios: Premios[]
+}
+
+export function PremiosList({ premios }: PremioListProps) {
   return (
     <section className="bg-white pb-10">
       <div className="container items-center">
         <div className="mx-auto flex w-[80%] flex-col gap-[40px] lg:gap-[112px]">
-          {[1, 2, 3, 4, 5].map((project) => {
-            return <Premio />
+          {premios.map((premio) => {
+            return <Premio premio={premio} key={premio.nome} />
           })}
         </div>
       </div>
