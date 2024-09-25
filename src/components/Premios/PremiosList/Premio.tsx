@@ -1,10 +1,10 @@
 import Image from 'next/image'
 
 import { documentToHtmlString } from '@contentful/rich-text-html-renderer'
-import { Premios } from '@/@types'
+import { IPremio } from '@/@types'
 
 interface PremioProps {
-  premio: Premios
+  premio: IPremio
 }
 
 export function Premio({ premio }: PremioProps) {

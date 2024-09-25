@@ -1,6 +1,11 @@
+import { IProjeto } from '@/@types'
 import { Project } from './Project'
 
-export function ProjectsList() {
+interface ProjectsListProps {
+  projetos: IProjeto[]
+}
+
+export function ProjectsList({ projetos }: ProjectsListProps) {
   return (
     <section className="bg-white py-[40px] lg:py-[150px]">
       <div className="container">
@@ -16,8 +21,8 @@ export function ProjectsList() {
         </div>
 
         <div className="mx-auto mt-[20px] flex w-[80%] flex-col gap-[40px] lg:mt-[112px] lg:gap-[112px]">
-          {[1, 2, 3, 4, 5].map((project) => {
-            return <Project />
+          {projetos.map((project) => {
+            return <Project project={project} key={project.nome} />
           })}
         </div>
       </div>

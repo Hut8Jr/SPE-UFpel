@@ -17,7 +17,7 @@ export const contentfulFetch = ({
       body: JSON.stringify({ query }),
       next: {
         tags: [tags, 'contentful'],
-        revalidate: 60 * 60 * 2,
+        revalidate: 60,
       },
     }
   )

@@ -1,14 +1,20 @@
+import { IProjeto } from '@/@types'
 import Image from 'next/image'
 import Link from 'next/link'
 
-export function Project() {
+interface ProjectProps {
+  project: IProjeto
+}
+
+export function Project({ project }: ProjectProps) {
+  console.log({ project })
   return (
-    <Link className="flex flex-col gap-3" href={'/projetos/projeto1'}>
+    <Link className="flex flex-col gap-3" href={`/projetos/${project.nome}`}>
       <Image
-        src="/projeto1.png"
+        src={project.foto.url}
         height={665}
         width={1000}
-        alt="Projeto 1"
+        alt={project.foto.title}
         className="aspect-video w-full"
         style={{
           objectFit: 'fill',
@@ -16,9 +22,11 @@ export function Project() {
       />
 
       <div className="flex justify-between">
-        <span className="text-[27px] font-light text-black">Speaking</span>
+        <span className="text-[27px] font-light text-black">
+          {project.nome}
+        </span>
         <span className="text-end text-[27px] font-light text-[#7A7A7A]">
-          Palestras
+          {project.tipo}
         </span>
       </div>
     </Link>

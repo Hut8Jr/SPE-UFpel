@@ -1,13 +1,18 @@
+import { IProjeto } from '@/@types'
 import Image from 'next/image'
 
-export function Hero() {
+interface HeroProps {
+  foto: IProjeto['foto']
+}
+
+export const Hero: React.FC<HeroProps> = ({ foto }) => {
   return (
-    <section className="container bg-brand-dark-blue">
+    <section className="flex justify-center bg-brand-dark-blue">
       <Image
-        src="/projeto1.png"
+        src={foto.url}
         height={680}
         width={1350}
-        alt="Projeto 1"
+        alt={foto.title}
         className="aspect-video"
         style={{
           objectFit: 'fill',

@@ -15,8 +15,20 @@ export type ContentfulImage = {
   }
 }
 
-export type Premios = {
+export type IPremio = {
   nome: string
+  descricao: {
+    json: any
+  }
+  foto: {
+    title: string
+    url: string
+  }
+}
+
+export type IProjeto = {
+  nome: string
+  tipo: string
   descricao: {
     json: any
   }

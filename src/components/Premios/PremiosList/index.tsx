@@ -1,8 +1,8 @@
-import { Premios } from '@/@types'
+import { IPremio } from '@/@types'
 import { Premio } from './Premio'
 
 interface PremioListProps {
-  premios: Premios[]
+  premios: IPremio[]
 }
 
 export function PremiosList({ premios }: PremioListProps) {
