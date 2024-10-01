@@ -48,7 +48,7 @@ export default function Header() {
   const isActive = (href: string) => pathName === href
 
   return (
-    <div className="max-w-screen fixed top-0 w-full bg-white shadow-md">
+    <div className="max-w-screen fixed top-0 z-50 w-full bg-white shadow-md">
       <div className="container flex items-center justify-between py-4">
         <Link href="/" className="w-[120px] transition lg:w-[190px]">
           <Icon name="logo-icon" />

@@ -4,6 +4,8 @@ import { InstagramIcon } from './InstagramIcon'
 import { LinkedinIcon } from './LinkedinIcon'
 import { HorizontalLinesIcon } from './HorizontalLinesIcon'
 import { XIcon } from 'lucide-react'
+import { ShapeDarkIcon } from './ShapeDarkIcon'
+import { ShapeLightIcon } from './ShapeLightIcon'
 
 export const svgrIcons = {
   'logo-icon': LogoIcon,
@@ -12,4 +14,6 @@ export const svgrIcons = {
   instagramIcon: InstagramIcon,
   horizontalLinesIcon: HorizontalLinesIcon,
   xIcon: XIcon,
+  shapeDarkIcon: ShapeDarkIcon,
+  shapeLightIcon: ShapeLightIcon,
 }

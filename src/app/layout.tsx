@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={clsx(inter.className, 'min-h-dvh')}>
         <Header />
-        <div className="mt-[126px]">{children}</div>
+        <div className="mt-[92px] lg:mt-[126px]">{children}</div>
         <Footer />
       </body>
     </html>
