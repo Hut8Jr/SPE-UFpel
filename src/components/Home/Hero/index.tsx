@@ -12,7 +12,7 @@ export function Hero() {
       )}
     >
       <div className="container flex flex-col justify-between lg:flex-row">
-        <div className="flex flex-1 flex-col lg:items-center lg:justify-center">
+        <div className="z-30 flex flex-1 flex-col lg:items-center lg:justify-center">
           <div className="mx-3 mt-8 flex flex-1 flex-col gap-3 lg:max-w-[591px] lg:justify-center lg:gap-7">
             <h2 className="text-[36px] font-light leading-[36px] text-white lg:text-[71px] lg:leading-[74px]">
               Um pouco mais sobre nossa SPE
@@ -26,8 +26,8 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="relative flex flex-1 flex-col lg:items-center lg:justify-center">
-          <div className="mx-3 mt-8 flex flex-1 flex-col gap-3 lg:max-w-[591px] lg:justify-center lg:gap-7">
+        <div className="relative z-30 flex flex-1 flex-col lg:items-center lg:justify-center">
+          <div className="z-30 mx-3 mt-8 flex flex-1 flex-col gap-3 lg:max-w-[591px] lg:justify-center lg:gap-7">
             <h2 className="text-[36px] font-light leading-[36px] text-white lg:text-[71px] lg:leading-[74px]">
               Mudando com nosso trabalho
             </h2>
@@ -39,7 +39,7 @@ export function Hero() {
             </Link>
           </div>
 
-          <div className="absolute bottom-5 right-0 flex flex-row gap-2">
+          <div className="absolute bottom-5 right-0 z-10 flex flex-row gap-2">
             <div className="w-[90px] lg:w-[200px]">
               <Icon name="shapeDarkIcon" />
             </div>

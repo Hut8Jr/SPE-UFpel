@@ -29,17 +29,25 @@ export const Membro: React.FC<MembroProps> = ({ membro }) => {
           className="h-full w-full max-w-[250px] lg:max-w-[350px]"
         />
         <div className="flex flex-col text-[16px] leading-[16px] lg:text-[22px] lg:leading-[22px]">
-          <h4 className="mb-6">Presidente</h4>
-          <span className="mb-2">dhaiaram@gmail.com</span>
-          <span>53 9999-0013</span>
+          <h4 className="mb-6">{membro.cargo}</h4>
+          <span className="mb-2">{membro.email}</span>
+          <span>{membro.telefone}</span>
           <div className="flex flex-row gap-3">
             {membro.linkedin && (
-              <Link href={membro.linkedin} className="block h-[48px] w-[48px]">
+              <Link
+                href={membro.linkedin}
+                className="block h-[48px] w-[48px]"
+                target="_blank"
+              >
                 <Icon name="linkedinIcon" className="w-full" />
               </Link>
             )}
             {membro.instagram && (
-              <Link href={''} className="block h-[48px] w-[48px]">
+              <Link
+                href={''}
+                className="block h-[48px] w-[48px]"
+                target="_blank"
+              >
                 <Icon name="instagramIcon" className="w-full" />
               </Link>
             )}
