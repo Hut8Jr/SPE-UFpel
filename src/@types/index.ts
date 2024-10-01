@@ -37,3 +37,19 @@ export type IProjeto = {
     url: string
   }
 }
+
+export type IMembro = {
+  nome: string
+  cargo: string
+  email: string
+  telefone: string
+  instagram: string
+  linkedin: string
+  descricao: {
+    json: any
+  }
+  foto: {
+    title: string
+    url: string
+  }
+}

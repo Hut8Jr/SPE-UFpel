@@ -1,11 +1,14 @@
+import { fetchMembrosPage } from '@/services/contentful/fetchMembros'
 import { Hero } from './Hero'
 import { MembrosList } from './MembrosList'
 
-export function MembrosContainer() {
+export async function MembrosContainer() {
+  const membrosPage = await fetchMembrosPage()
+
   return (
     <main className="h-full">
       <Hero />
-      <MembrosList />
+      <MembrosList membros={membrosPage.data.membrosCollection.items} />
     </main>
   )
 }
