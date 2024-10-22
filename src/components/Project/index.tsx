@@ -10,11 +10,11 @@ export const ProjectContainer: React.FC<IProjectContainerProps> = async ({
   name,
 }) => {
   const projetoPage = await fetchProjetoPage(name)
-  const projeto = projetoPage.data.projetosCollection.items[0]
+  const projeto = projetoPage?.data?.projetosCollection?.items?.[0]
 
   return (
     <main className="h-full bg-white">
-      <Hero foto={projeto.foto} />
+      <Hero foto={projeto?.foto} />
       <AboutProject project={projeto} />
     </main>
   )

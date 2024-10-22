@@ -43,9 +43,9 @@ query{
 `
 
 export interface FetchProjetoPageResponse {
-  data: {
-    projetosCollection: {
-      items: IProjeto[]
+  data?: {
+    projetosCollection?: {
+      items?: IProjeto[]
     }
   }
 }

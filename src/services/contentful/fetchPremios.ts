@@ -41,9 +41,9 @@ const query = `
 `
 
 export interface FetchPremiosPageResponse {
-  data: {
-    premiosCollection: {
-      items: IPremio[]
+  data?: {
+    premiosCollection?: {
+      items?: IPremio[]
     }
   }
 }

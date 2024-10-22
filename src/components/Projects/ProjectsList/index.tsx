@@ -2,7 +2,7 @@ import { IProjeto } from '@/@types'
 import { Project } from './Project'
 
 interface ProjectsListProps {
-  projetos: IProjeto[]
+  projetos?: IProjeto[]
 }
 
 export function ProjectsList({ projetos }: ProjectsListProps) {
@@ -21,7 +21,7 @@ export function ProjectsList({ projetos }: ProjectsListProps) {
         </div>
 
         <div className="mx-auto mt-[20px] flex w-[80%] flex-col gap-[40px] lg:mt-[112px] lg:gap-[112px]">
-          {projetos.map((project) => {
+          {projetos?.map((project) => {
             return <Project project={project} key={project.nome} />
           })}
         </div>

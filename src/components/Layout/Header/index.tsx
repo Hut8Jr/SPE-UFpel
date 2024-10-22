@@ -65,7 +65,7 @@ export default function Header() {
         </nav>
 
         <Drawer direction="right">
-          <DrawerTrigger>
+          <DrawerTrigger className="block lg:hidden">
             <button className="flex items-center gap-3">
               Menu
               <div className="w-10">

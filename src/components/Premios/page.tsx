@@ -12,7 +12,7 @@ export async function PremiosContainer() {
     return (
       <main className="h-full bg-white">
         <Hero />
-        <PremiosList premios={premios.data.premiosCollection.items} />
+        <PremiosList premios={premios?.data?.premiosCollection?.items} />
       </main>
     )
   } catch (error) {

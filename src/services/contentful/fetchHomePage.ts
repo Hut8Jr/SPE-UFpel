@@ -1,11 +1,11 @@
 import { contentfulFetch } from './client'
-import { IMembro } from '@/@types'
+import { IProjeto } from '@/@types'
 
-export const fetchMembrosPage = async (): Promise<FetchMembrosPageResponse> => {
+export const fetchHomePage = async (): Promise<FetchHomePageResponse> => {
   try {
     const response = await contentfulFetch({
       query,
-      tags: 'fetchMembrosPage',
+      tags: 'fetchHomePage',
     })
 
     const data = await response.json()
@@ -13,7 +13,7 @@ export const fetchMembrosPage = async (): Promise<FetchMembrosPageResponse> => {
   } catch {
     return {
       data: {
-        membrosCollection: {
+        premiosCollection: {
           items: [],
         },
       },
@@ -23,30 +23,25 @@ export const fetchMembrosPage = async (): Promise<FetchMembrosPageResponse> => {
 
 const query = `
 {
-  membrosCollection(limit: 100) {
+  premiosCollection(order: sys_publishedAt_DESC, limit: 3) {
     items {
       nome
-      cargo
-      email
-      telefone
-      instagram
-      linkedin
       descricao {
         json
       }
       foto {
-        title
         url
+        title
       }
     }
   }
 }
 `
 
-export interface FetchMembrosPageResponse {
-  data?: {
-    membrosCollection: {
-      items?: IMembro[]
+export interface FetchHomePageResponse {
+  data: {
+    premiosCollection: {
+      items: IProjeto[]
     }
   }
 }

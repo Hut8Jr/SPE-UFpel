@@ -11,10 +11,10 @@ export function Premio({ premio }: PremioProps) {
   return (
     <div className="flex flex-col items-center gap-5 lg:flex-row lg:gap-10">
       <Image
-        src={`${premio.foto.url}`}
+        src={`${premio?.foto?.url}`}
         height={441}
         width={441}
-        alt={premio.foto.title}
+        alt={premio?.foto?.title || ''}
         className="aspect-square max-h-[200px] max-w-[200px] lg:h-[250px] lg:w-[250px]"
         style={{
           objectFit: 'fill',
@@ -28,7 +28,7 @@ export function Premio({ premio }: PremioProps) {
         <p
           className="text-[18px] leading-[18px] lg:text-[22px] lg:leading-[22px]"
           dangerouslySetInnerHTML={{
-            __html: documentToHtmlString(premio.descricao.json),
+            __html: documentToHtmlString(premio?.descricao?.json),
           }}
         />
       </div>

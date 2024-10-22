@@ -11,10 +11,10 @@ export function Project({ project }: ProjectProps) {
   return (
     <Link className="flex flex-col gap-3" href={`/projetos/${project.nome}`}>
       <Image
-        src={project.foto.url}
+        src={project?.foto?.url || ''}
         height={665}
         width={1000}
-        alt={project.foto.title}
+        alt={project?.foto?.title || ''}
         className="aspect-video w-full"
         style={{
           objectFit: 'fill',

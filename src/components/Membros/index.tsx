@@ -8,7 +8,7 @@ export async function MembrosContainer() {
   return (
     <main className="h-full">
       <Hero />
-      <MembrosList membros={membrosPage.data.membrosCollection.items} />
+      <MembrosList membros={membrosPage?.data?.membrosCollection?.items} />
     </main>
   )
 }
