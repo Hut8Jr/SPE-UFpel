@@ -39,9 +39,9 @@ const query = `
 `
 
 export interface FetchHomePageResponse {
-  data: {
-    premiosCollection: {
-      items: IProjeto[]
+  data?: {
+    premiosCollection?: {
+      items?: IProjeto[]
     }
   }
 }
